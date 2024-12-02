@@ -22,28 +22,36 @@ const Contact = () => { // Changed 'contact' to 'Contact' to follow React's nami
           <input
             type="text"
             placeholder='Full Name'
-            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md'
+            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md focus:ring-2 focus:ring-blue-400 transition duration-300'
             required
+            aria-label="Full Name"
           />
           <input
             type="email"
             placeholder='Email Address'
-            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md'
+            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md focus:ring-2 focus:ring-blue-400 transition duration-300'
             required
+            aria-label="Email Address"
           />
           <input
             type="text"
             placeholder='Phone Number'
-            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md'
+            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md focus:ring-2 focus:ring-blue-400 transition duration-300'
             required
+            aria-label="Phone Number"
           />
           <textarea
             placeholder='Your Message...'
-            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md'
+            className='w-full mb-4 px-4 py-2 border border-blue-500 rounded-md focus:ring-2 focus:ring-blue-400 transition duration-300'
             rows={5}
             required
+            aria-label="Your Message"
           />
-          <button className='w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600' type='submit'>
+          <button
+            className='w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 transition duration-300'
+            type='submit'
+            aria-label="Send Message"
+          >
             Send Message
           </button>
         </form>
